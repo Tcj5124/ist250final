@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact | Penn State's Gaming Console Buyer's Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Penn State's Gaming Console Buyer's Guide</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ps5.html">PlayStation 5</a></li>
+                    <li><a href="xbox.html">Xbox Series X|S</a></li>
+                    <li><a href="compare.html">Comparison</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<main>
+
+    <h2 id="greeting">Contact Me</h2>
+    <p id="brief"> Please, feel free to fill out this form below to send a quick message about PS5 and Xbox.</p>
+
+    <hr>
+
+    <section class="contact-box">
+        <h2>Submit your Message</h2>
+
+        <label for="nameInput">Your Name:</label>
+        <input type="text" id="nameInput" name="nameInput">
+        <br><br>
+
+        <label for="emailInput">Your Email:</label>
+        <input type="email" id="emailInput" name="emailInput">
+        <br><br>
+
+        <label for="messageInput">Your Message:</label>
+        <textarea id="messageInput" name="messageInput" rows="4"></textarea>
+        <br><br>
+        
+        <label for="topicSelect">Topic:</label>
+            <select id="topicSelect" name="topicSelect">
+                <option value="PS5">PlayStation 5</option>
+                <option value="Xbox">Xbox Series X|S</option>
+                <option value="Comparison">Comparison</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <input type="button" value="Submit Message" onclick="submitContact();">
+
+            <hr>
+
+            <p id="confirmMessage"></p>
+
+            <p>
+                <a class="button-link" href="index.html">Back to Home</a>
+            </p>
+    </section>
+
+</main>
+
+    <footer>
+        <p>&copy; 2025 Penn State's Gaming Console Buyer's Guide | Tommie Jackson</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

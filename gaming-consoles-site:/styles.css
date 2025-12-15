@@ -1,0 +1,269 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #0a142f;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+#compare-heading {
+    letter-spacing: 0.5px;
+}
+
+header {
+    background-color: #162042;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #2b3f93;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:active {
+    background-color: #2f3e85;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #0a0f25;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                        url("images/hero-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 360px;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.ps5-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                        url("images/ps5-hero-banner.jpg");
+
+    background-size: 78%;
+    background-position: center;
+
+    min-height: 350px;
+}
+
+.xbox-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url("images/xbox-hero-logo.jpg");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 325px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transition: transform 0.25s ease, box-shadow 0.23s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+
+    filter: brightness(0.95);
+    transition: filter 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card:hover img {
+    filter: brightness(1.08);
+}
+
+.feature h2 {
+    margin-top: 50px;
+}
+
+.tip-section {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tip-btn {
+    margin-top: 10px;
+    padding: 10px 26px;
+    background-color: #1f2a5a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tip-btn:hover {
+    background-color: #2f3e85;
+    transform: scale(1.05);
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 18px;
+    background-color: #1f2a5a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-link:hover {
+    background-color: #2f3e85;
+    transform: scale(1.05);
+}
+
+.compare-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                        url("images/compare-hero.jpg");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 300px;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #0b1026;
+    color: white;
+}
+
+.compare-table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid #2f3e85;
+    padding: 10px;
+    text-align: left;
+}
+
+.compare-table th {
+    background-color: #1f2a5a;
+    color: white;
+}
+
+.compare-table tr:hover td {
+    background-color: #1f2a5a;
+}
+
+.contact-box {
+    position: relative;
+    top: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b1026;
+    border-radius: 8px;
+    border: 1px solid #2f3e85;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #2f3e85;
+    background-color: #162042;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #2b3f93;
+}
+
+footer {
+    background-color: #17244f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        min-height: 250px;
+        padding: 40px 20px;
+    }
+}
